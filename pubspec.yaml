@@ -5,4 +5,4 @@ publish_to: 'none'
 homepage: https://github.com/superlistapp/dart_analysis_options
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
