@@ -1,8 +1,8 @@
-name: dart_analysis_options
-description: A custom analysis_options.yaml file for all internal projects.
-version: 0.0.1
+name: superlint
+description: A custom analysis_options.yaml file for all Superlist projects.
+version: 0.1.0
 publish_to: 'none'
-homepage: https://github.com/superlistapp/dart_analysis_options
+homepage: https://github.com/superlistapp/superlint
 
 environment:
   sdk: '>=2.12.0 <3.0.0'

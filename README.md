@@ -1,3 +1,3 @@
-# dart_analysis_options
+# superlint
 
-A custom analysis_options.yaml file for all internal projects.
+A custom analysis_options.yaml file for all Superlist projects.

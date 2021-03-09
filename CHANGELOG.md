@@ -1,3 +1,7 @@
+## [0.1.0] - 09/03/2021
+
+Add Null Safety support.
+
 ## [0.0.1] - 01/03/2021
 
-Initial version which flutter team has been using in the superlist repo.
+Initial version.
