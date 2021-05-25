@@ -18,9 +18,6 @@ linter:
     - always_use_package_imports
     - annotate_overrides
     - avoid_annotating_with_dynamic
-    # The app has some casting when the inference can not work. That is why the as
-    # usage is necessary.
-    # - avoid_as
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
     - avoid_catching_errors
@@ -36,6 +33,7 @@ linter:
     - avoid_implementing_value_types
     - avoid_init_to_null
     - avoid_js_rounded_ints
+    - avoid_multiple_declarations_per_line
     - avoid_null_checks_in_equality_operators
     - avoid_positional_boolean_parameters
     - avoid_print
@@ -64,8 +62,7 @@ linter:
     - camel_case_types
     - cancel_subscriptions
     - cascade_invocations
-    # Experimental lint rule (null-safety)
-    # - cast_nullable_to_non_nullable
+    - cast_nullable_to_non_nullable
     - close_sinks
     - comment_references
     - constant_identifier_names
@@ -74,6 +71,7 @@ linter:
     # This is an overkill of the implementation for the diagnostics.
     # We don't need it right now.
     # - diagnostic_describe_all_properties
+    - deprecated_consistency
     - directives_ordering
     - do_not_use_environment
     - empty_catches
@@ -92,6 +90,7 @@ linter:
     - leading_newlines_in_multiline_strings
     - library_names
     - library_prefixes
+    - library_private_types_in_public_api
     - lines_longer_than_80_chars
     - list_remove_unrelated_type
     - literal_only_boolean_expressions
@@ -103,8 +102,7 @@ linter:
     - no_logic_in_create_state
     - no_runtimeType_toString
     - non_constant_identifier_names
-    # Experimental lint rule (null-safety)
-    # - null_check_on_nullable_type_parameter
+    - null_check_on_nullable_type_parameter
     - null_closures
     - omit_local_variable_types
     # Team has abstract classes/interfaces that has one method
@@ -151,6 +149,7 @@ linter:
     - prefer_is_not_operator
     - prefer_iterable_whereType
     - prefer_mixin
+    - prefer_null_aware_method_calls
     - prefer_null_aware_operators
     # When mixing relative and absolute imports it's possible to create confusion where
     # the same member gets imported in two different ways, hence it can be problematic.
@@ -165,6 +164,7 @@ linter:
     # Writing a doc for the sake of writing it, does not make any sense to me.
     # - public_member_api_docs
     - recursive_getters
+    - require_trailing_commas
     - sized_box_for_whitespace
     - slash_for_doc_comments
     - sort_child_properties_last
@@ -186,11 +186,9 @@ linter:
     - unnecessary_lambdas
     - unnecessary_new
     - unnecessary_null_aware_assignments
-    # Experimental lint rule (null-safety)
-    # - unnecessary_null_checks
+    - unnecessary_null_checks
     - unnecessary_null_in_if_null_operators
-    # Experimental lint rule (null-safety)
-    # - unnecessary_nullable_for_final_variable_declarations
+    - unnecessary_nullable_for_final_variable_declarations
     - unnecessary_overrides
     - unnecessary_parenthesis
     - unnecessary_raw_strings
@@ -200,12 +198,14 @@ linter:
     - unnecessary_this
     - unrelated_type_equality_checks
     - unsafe_html
+    - use_build_context_synchronously
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters
+    - use_if_null_to_convert_nulls_to_bools
     - use_is_even_rather_than_modulo
     - use_key_in_widget_constructors
-    # Experimental lint rule (null-safety)
-    # - use_late_for_private_fields_and_variables
+    - use_late_for_private_fields_and_variables
+    - use_named_constants
     - use_raw_strings
     - use_rethrow_when_possible
     - use_setters_to_change_properties
